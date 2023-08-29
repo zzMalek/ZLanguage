@@ -1,1 +1,1 @@
-.MODEL SMALL .CODE Inicio: mov ax, @Data mov ds, ax                                  mov ah, 09hmov dx, offset eti0int 21h                                             .DATAeti0 db ' holi p t $'eti1 db ' pndjo $'eti2 db ' el cacas $'    .STACKend Inicio
+

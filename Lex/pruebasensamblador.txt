@@ -1,0 +1,50 @@
+.MODEL SMALL 
+.CODE 
+Inicio: 
+mov ax, @Data 
+mov ds, ax 
+mov ah, 09h 
+mov dx, offset eti0
+int 21h
+mov ah, 09h 
+mov dx, offset eti1
+int 21h
+mov ah, 09h 
+mov dx, offset eti2
+int 21h
+mov ah, 09h 
+mov dx, offset eti3
+int 21h
+mov ah, 09h 
+mov dx, offset eti4
+int 21h
+mov ah, 09h 
+mov dx, offset eti5
+int 21h
+mov ah, 09h 
+mov dx, offset eti6
+int 21h
+mov ah, 09h 
+mov dx, offset eti7
+int 21h
+mov ah, 0ah
+mov dx, [offset B+2], 3
+add B, 30h
+mov dx, offset B+2
+mov ah, 9
+int 21h
+sub B, 30h
+mov ax, 4C00h
+int 21h
+.DATA
+eti0 db ' gg $'
+eti1 db ' buenas tardes $'
+eti2 db ' 32 $'
+eti3 db ' 32.32 $'
+eti4 db ' 1 $'
+eti5 db ' 3 $'
+eti6 db ' -3 $'
+eti7 db ' -33.33 $'
+B db 5,?,5 dup (24h)
+.STACK
+end Inicio

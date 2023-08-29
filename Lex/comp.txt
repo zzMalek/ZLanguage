@@ -1,0 +1,36 @@
+zint a = 0
+zint b = 0
+zint c = 0
+zint x = 0
+Printz (' ingrese a ')
+Zcan a
+Printz (' ingrese b ')
+Zcan b
+Printz (' ingrese c ')
+Zcan c
+Zcan tu
+if ( a != b )
+if ( b != c )
+if ( c != a )
+
+if ( a > b )
+for ( b // b -> c // b ++ )
+>> x = b % 2
+if ( x == 0 )
+Printz ( b )
+if;
+for;
+if;
+
+if ( b > a )
+for ( a // a -> c // a ++ )
+>> x = a % 2
+if ( x == 0 )
+Printz ( a )
+if;
+for;
+if;
+
+if;
+if;
+if;
